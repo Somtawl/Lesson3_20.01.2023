@@ -1,0 +1,14 @@
+Console.WriteLine("Введите значение x для точки А");
+int AX = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите значение y для точки А");
+int AY = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите значение z для точки А");
+int AZ = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите значение x для точки B");
+int BX = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите значение y для точки B");
+int BY = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите значение z для точки B");
+int BZ = Convert.ToInt32(Console.ReadLine());
+double distance = Math.Sqrt(Math.Pow(BX - AX, 2) + Math.Pow(BY - AY, 2) + Math.Pow(BZ - AZ, 2));
+Console.WriteLine("Расстояние между точками = {0:0.00}",distance);
